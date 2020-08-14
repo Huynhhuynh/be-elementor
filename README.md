@@ -14,6 +14,8 @@ use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 
 /** 
+ * widget.php
+ * 
  * WIDGET: Hello
  */
 
@@ -32,8 +34,8 @@ class BeElementorWidgetHello extends Widget_Base {
     }
 
     public function get_categories() {
-		return [ 'be-elementor-category' ];
-	}
+        return [ 'be-elementor-category' ];
+    }
 
     protected function _register_controls() {
         $this->start_controls_section(
