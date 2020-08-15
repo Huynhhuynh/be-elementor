@@ -24,7 +24,7 @@ define( 'BEE_URI', plugin_dir_url( __FILE__ ) );
 - [Magnific-Popup](https://github.com/dimsemenov/Magnific-Popup)
 
 ###  New Widget
-Create new a folder `/be-elementor/widgets/<your-widget>/widget.php`, widget style in `/be-elementor/scss/widgets/_<your-widget>.scss` or `_widget-common.scss`
+Create new a folder `/be-elementor/widgets/<your-widget>/widget.php`, widget style in `/be-elementor/src/scss/widgets/_<your-widget>.scss` or `_widget-common.scss`
 ```php
 <?php 
 use Elementor\Widget_Base;
