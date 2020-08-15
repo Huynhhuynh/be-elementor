@@ -3,7 +3,7 @@
  * Elementor widget loaded
  */
 
-class BeElementorWidgetLoaded {
+class BeeWidgetLoaded {
 
     private static $_instance = null;
 
@@ -45,4 +45,4 @@ class BeElementorWidgetLoaded {
     }
 }
 
-BeElementorWidgetLoaded::instance();
+BeeWidgetLoaded::instance();

@@ -6,7 +6,7 @@ use Elementor\Controls_Manager;
  * WIDGET: test
  */
 
-class BeElementorWidgetHello extends Widget_Base {
+class BeeWidgetHello extends Widget_Base {
 
     public function get_name() {
         return 'be-elementor-' . basename( __DIR__ );
@@ -57,4 +57,4 @@ class BeElementorWidgetHello extends Widget_Base {
 
 \Elementor\Plugin::instance()
     ->widgets_manager
-    ->register_widget_type( new BeElementorWidgetHello() );
+    ->register_widget_type( new BeeWidgetHello() );

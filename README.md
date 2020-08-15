@@ -3,11 +3,28 @@
 
 a WordPress plugin add-on for Elementor
 
-  
+## 👉  `npm install`
+- Install node package
+
+## 👉  `npm run dev`
+- Use webpack to compile JavaScript modules.
+
+### Define 
+```php
+/**
+ * Define 
+ */
+define( 'BEE_VER', '1.0.0' );
+define( 'BEE_DIR', plugin_dir_path( __FILE__ ) );
+define( 'BEE_URI', plugin_dir_url( __FILE__ ) );
+```  
+
+### Support JS Library
+- [OwlCarousel](https://github.com/OwlCarousel2/OwlCarousel2) 
+- [Magnific-Popup](https://github.com/dimsemenov/Magnific-Popup)
 
 ###  New Widget
-
-Create new a folder `/be-elementor/widgets/<your-widget>/widget.php` 
+Create new a folder `/be-elementor/widgets/<your-widget>/widget.php`, widget style in `/be-elementor/scss/widgets/_<your-widget>.scss` or `_widget-common.scss`
 ```php
 <?php 
 use Elementor\Widget_Base;
@@ -19,7 +36,7 @@ use Elementor\Controls_Manager;
  * WIDGET: Hello
  */
 
-class BeElementorWidgetHello extends Widget_Base {
+class BeeWidgetHello extends Widget_Base {
 
     public function get_name() {
         return '';
@@ -70,5 +87,5 @@ class BeElementorWidgetHello extends Widget_Base {
 
 \Elementor\Plugin::instance()
     ->widgets_manager
-    ->register_widget_type( new BeElementorWidgetHello() );
+    ->register_widget_type( new BeeWidgetHello() );
 ```

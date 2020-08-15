@@ -16,21 +16,21 @@
     /**
      * Define 
      */
-    define( 'BE_ELEMENTOR_VER', '1.0.0' );
-    define( 'BE_ELEMENTOR_DIR', plugin_dir_path( __FILE__ ) );
-    define( 'BE_ELEMENTOR_URL', plugin_dir_url( __FILE__ ) );
+    define( 'BEE_VER', '1.0.0' );
+    define( 'BEE_DIR', plugin_dir_path( __FILE__ ) );
+    define( 'BEE_URI', plugin_dir_url( __FILE__ ) );
 }
 
 {
     /**
      * Include
      */
-    require( BE_ELEMENTOR_DIR . 'inc/static.php' );
-    require( BE_ELEMENTOR_DIR . 'inc/helpers.php' );
-    require( BE_ELEMENTOR_DIR . 'inc/hooks.php' );
-    require( BE_ELEMENTOR_DIR . 'inc/ajax.php' );
-    require( BE_ELEMENTOR_DIR . 'inc/template-tag.php' );
-    require( BE_ELEMENTOR_DIR . 'inc/elementor-widget-loaded.php' );
+    require( BEE_DIR . 'inc/static.php' );
+    require( BEE_DIR . 'inc/helpers.php' );
+    require( BEE_DIR . 'inc/hooks.php' );
+    require( BEE_DIR . 'inc/ajax.php' );
+    require( BEE_DIR . 'inc/template-tag.php' );
+    require( BEE_DIR . 'inc/elementor-widget-loaded.php' );
 }
 
 {
